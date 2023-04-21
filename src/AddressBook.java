@@ -1,14 +1,15 @@
 
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @julian Hahnefeld
  * @Jenna-lee Melinkat
  *
  */
-public class Adressbuch {
+public class AddressBook {
 
-    LinkedList<Contact> contactListe;
+    LinkedList<Contact> contacts;
 
     /**
      * Adressbuch()
@@ -16,8 +17,8 @@ public class Adressbuch {
      * wird erstellt
      *
      */
-    public Adressbuch() {
-        contactListe = new LinkedList<>();
+    public AddressBook() {
+        contacts = new LinkedList<>();
     }
 
 
@@ -28,8 +29,8 @@ public class Adressbuch {
      * erstellen möchte
      *
      */
-    public Adressbuch(Contact contact) {
-        contactListe = new LinkedList<Contact>();
+    public AddressBook(Contact contact) {
+        contacts = new LinkedList<Contact>();
         addKontakt(contact);
     }
 
@@ -41,9 +42,24 @@ public class Adressbuch {
      *
      */
     void addKontakt(Contact neuerContact){
-        contactListe.add(neuerContact);
+        contacts.add(neuerContact);
     }
-
+    void  removeContact(Contact contact){
+        contacts.remove();
+    }
+    void clearContacts(){
+        contacts.clear();
+    }
+    public LinkedList<Contact> findByName(String name){
+        name = name.toLowerCase().trim();
+        LinkedList<Contact> searchresults = new LinkedList<>();
+        for (Contact contact : contacts) {
+            if(contact.getFirstName().toLowerCase().contains(name) || contact.getLastName().toLowerCase().contains(name)){
+                searchresults.add(contact);
+            }
+        }
+        return searchresults;
+    }
 
     /**
      * toString() durchläuft die komplette Kontaktliste und
@@ -53,7 +69,7 @@ public class Adressbuch {
      */
     public String toString() {
         StringBuilder outputString = new StringBuilder();
-        for (Contact contact : contactListe) {
+        for (Contact contact : contacts) {
             outputString.append(contact.toString()).append('\n').append('\n');
         }
         return outputString.toString();

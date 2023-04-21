@@ -3,22 +3,36 @@
  * @Jenna-lee Melinkat
  *
  */
-public class Kontakt {
+public class Contact {
 
     private String firstName;
-    private String nachname;
-    private String strasse;
-    private int postleitzahl;
-    private String stadt;
-    private String land;
+    private String lastName;
+    private Address address;
+    private Phone phone;
 
-    public Kontakt(String firstName, String nachname, String strasse, int postleitzahl, String stadt, String land) {
+
+
+
+    public Contact(String firstName, String lastName, Address address, Phone phone) {
         this.firstName = firstName;
-        this.nachname = nachname;
-        this.strasse = strasse;
-        this.postleitzahl = postleitzahl;
-        this.stadt = stadt;
-        this.land = land;
+        this.lastName = lastName;
+        this.address = address;
+        this.phone = phone;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+    public Phone getPhone() {
+        return phone;
     }
 
 
@@ -29,11 +43,7 @@ public class Kontakt {
      */
     public String toString() {
        String kontaktdaten = "Vorname: " + firstName + '\n' +
-               "Nachname: " + nachname + '\n' +
-               "Straße: " + strasse + '\n' +
-               "Postleitzahl: " + postleitzahl + '\n' +
-               "Stadt: " + stadt + '\n' +
-               "Land: " + land;
+               "Nachname: " + lastName + '\n' + address + '\n' + phone ;
        return kontaktdaten;
     }
 
