@@ -1,7 +1,5 @@
 
 import java.util.LinkedList;
-import java.util.List;
-
 /**
  * Die Klasse AddressBook repräsentiert eine Sammlung von Kontakten.
  * Sie ermöglicht das Hinzufügen, Entfernen und Suchen von

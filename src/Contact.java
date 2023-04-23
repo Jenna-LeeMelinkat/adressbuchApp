@@ -13,10 +13,10 @@ public class Contact {
 
     /**
      * Konstruktor der Contact-Klasse
-     * @param firstName
-     * @param lastName
-     * @param address
-     * @param phone
+     * @param firstName Vorname des Kontakts
+     * @param lastName Nachname des Kontakts
+     * @param address Adresse des Kontakts
+     * @param phone Telefonnummer des Kontakts
      */
     public Contact(String firstName, String lastName, Address address, Phone phone) {
         this.firstName = firstName;
