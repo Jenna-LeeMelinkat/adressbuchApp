@@ -44,10 +44,7 @@ public class Phone {
         return number;
     }
 
-    /**
-     * Gibt die Telefonnummer als String zurück
-     * @return phone
-     */
+    @Override
     public String toString() {
         String phone =  "AreaCode: " + areaCode + '\n' +
                         "Präfix: " + prefix + '\n' +

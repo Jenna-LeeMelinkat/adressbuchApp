@@ -56,10 +56,7 @@ public class Address {
         return country;
     }
 
-    /**
-     * Gibt die Adresse als String zurück.
-     * @return kontaktdaten
-     */
+    @Override
     public String toString() {
         String kontaktdaten =
                 "Straße: " + street + '\n' +

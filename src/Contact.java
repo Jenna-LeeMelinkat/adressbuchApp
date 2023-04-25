@@ -1,3 +1,7 @@
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Set;
+
 /**
  * Die Contact-Klasse repräsentiert einen Kontakt
  * mit Vorname, Nachname, Adresse und Telefonnummer.
@@ -8,8 +12,8 @@ public class Contact {
 
     private String firstName;
     private String lastName;
-    private Address address;
-    private Phone phone;
+    private Set<Address> addressesSet;
+    private Set<Phone> phonesSet;
 
     /**
      * Konstruktor der Contact-Klasse
@@ -21,9 +25,33 @@ public class Contact {
     public Contact(String firstName, String lastName, Address address, Phone phone) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.address = address;
-        this.phone = phone;
+        this.addressesSet = new HashSet<>();
+        addressesSet.add(address);
+        this.phonesSet = new HashSet<>();
+        phonesSet.add(phone);
+
     }
+
+    public Contact(String firstName, String lastName, Address address) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.addressesSet = new HashSet<>();
+        addressesSet.add(address);
+    }
+
+    public Contact(String firstName, String lastName, Phone phone) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phonesSet = new HashSet<>();
+        phonesSet.add(phone);
+    }
+
+    public Contact(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+
 
     /**
      * Gibt den Vornamen des Kontakts zurück.
@@ -45,25 +73,59 @@ public class Contact {
      * Gibt die Adresse des Kontakts zurück.
      * @return address
      */
-    public Address getAddress() {
-        return address;
-    }
+    public Set<Address> getAddressesSet() {return addressesSet; }
 
     /**
      * Gibt die Telefonnummer des Kontakts zurück.
      * @return phone
      */
-    public Phone getPhone() {
-        return phone;
-    }
+    public Set getPhone() {return phonesSet; }
 
-    /**
-     * Gibt die Kontaktdaten eines Kontakts als String zurück
-     * @return kontaktdaten
-     */
+    @Override
     public String toString() {
        String kontaktdaten = "Vorname: " + firstName + '\n' +
-               "Nachname: " + lastName + '\n' + address + '\n' + phone ;
+               "Nachname: " + lastName + '\n' + addressesSet + '\n' + phonesSet ;
        return kontaktdaten;
+    }
+
+    public LinkedList<Address> getAddresses(){
+
+        return null;
+    }
+
+    public boolean hasAddress(){
+        return !addressesSet.isEmpty();
+    }
+
+    public void addAdresses(Address address){
+
+    }
+
+    public void removeAddress(Address zaumpfahl){
+
+    }
+
+    public void clearAdresses(){
+
+    }
+
+    public LinkedList<Phone> getPhones(){
+        return null;
+    }
+
+    public boolean hasPhone(){
+        return !phonesSet.isEmpty();
+    }
+
+    public void addPhone(Phone teleeeefon){
+
+    }
+
+    public void removePhone(Phone addresse){
+
+    }
+
+    public void clearPhones(){
+
     }
 }
