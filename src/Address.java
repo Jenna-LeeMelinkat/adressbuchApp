@@ -49,7 +49,7 @@ public class Address {
     }
 
     /**
-     * Gibt das land der Adresse zurück.
+     * Gibt das Land der Adresse zurück.
      * @return country
      */
     public String getCountry() {
