@@ -33,22 +33,15 @@ public class Contact {
     }
 
     public Contact(String firstName, String lastName, Address address) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.addressesSet = new HashSet<>();
-        addressesSet.add(address);
+        this(firstName,lastName,address,new Phone("","",""));
     }
 
     public Contact(String firstName, String lastName, Phone phone) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phonesSet = new HashSet<>();
-        phonesSet.add(phone);
+        this(firstName,lastName,new Address("","","",""),phone);
     }
 
     public Contact(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this(firstName,lastName,new Phone("","",""));
     }
 
 
