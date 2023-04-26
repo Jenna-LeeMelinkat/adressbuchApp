@@ -78,44 +78,43 @@ public class Contact {
        return kontaktdaten;
     }
 
-    public LinkedList<Address> getAddresses(){
-
-        return null;
+    public Set<Address> getAddresses(){
+        return addressesSet;
     }
 
     public boolean hasAddress(){
         return !addressesSet.isEmpty();
     }
 
-    public void addAdresses(Address address){
-
+    public void addAddresses(Address newAddress){
+        addressesSet.add(newAddress);
     }
 
-    public void removeAddress(Address zaumpfahl){
-
+    public void removeAddress(Address address){
+        addressesSet.remove(address);
     }
 
-    public void clearAdresses(){
-
+    public void clearAddresses(){
+        addressesSet.clear();
     }
 
-    public LinkedList<Phone> getPhones(){
-        return null;
+    public Set<Phone> getPhones(){
+        return phonesSet;
     }
 
     public boolean hasPhone(){
         return !phonesSet.isEmpty();
     }
 
-    public void addPhone(Phone teleeeefon){
-
+    public void addPhone(Phone newPhone){
+        phonesSet.add(newPhone);
     }
 
-    public void removePhone(Phone addresse){
-
+    public void removePhone(Phone phone){
+        phonesSet.remove(phone);
     }
 
     public void clearPhones(){
-
+        phonesSet.clear();
     }
 }
