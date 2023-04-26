@@ -2,7 +2,7 @@
  * Die Klasse Phone repräsentiert eine
  * Telefonnummer mit Vorwahl, Präfix und Nummer.
  */
-public class Phone {
+public class Phone extends Entry {
 
     private String areaCode;
     private String prefix;

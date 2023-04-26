@@ -29,7 +29,6 @@ public class Contact {
         addressesSet.add(address);
         this.phonesSet = new HashSet<>();
         phonesSet.add(phone);
-
     }
 
     public Contact(String firstName, String lastName, Address address) {
@@ -43,8 +42,6 @@ public class Contact {
     public Contact(String firstName, String lastName) {
         this(firstName,lastName,new Phone("","",""));
     }
-
-
 
     /**
      * Gibt den Vornamen des Kontakts zurück.

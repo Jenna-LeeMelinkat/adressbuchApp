@@ -3,7 +3,7 @@
  * @author Jenna-Lee Melinkat
  * @author Julian Hahnefeld
  */
-public class Address {
+public class Address extends Entry {
 
     private String street;
     private String postalCode;
