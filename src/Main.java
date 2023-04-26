@@ -21,15 +21,24 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Contact contactUno = new Contact("drei", "Alkanani", new Address("Faulstrasse", "23552", "Kiel", "germany"), new Phone("+49", "0", "56323445"));
-        Contact contactDos = new Contact("Drei ", "Melinkat", new Address("Hauptsrasse", "23557", "Lübeck", "germany"), new Phone("+49", "0", "453565363"));
-        Contact contactTres = new Contact("Drei", "Mahnke", new Address("Langsamweg", "12445", "Lübeck", "germany"), new Phone("+49", "0", "123456789"));
+        Contact contactUno = new Contact("contactUno", "Alkanani", new Address("Faulstrasse", "23552", "Kiel", "germany"), new Phone("+49", "0", "56323445"));
+        Contact contactDos = new Contact("contactDos ", "Melinkat", new Address("Hauptsrasse", "23557", "Lübeck", "germany"), new Phone("+49", "0", "453565363"));
+        Contact contactTres = new Contact("contactTres", "Mahnke", new Address("Langsamweg", "12445", "Lübeck", "germany"), new Phone("+49", "0", "123456789"));
+        Contact contactCuatro = new Contact("contactCuatro", "Mahnke", new Phone("+49", "0", "123456789"));
+        Contact contactCinco = new Contact("contactCinco", "Mahnke");
+        Contact contactSeis = new Contact("contactSeis", "Mahnke", new Address("Langsamweg", "12445", "Lübeck", "germany"));
+
 
         AddressBook addressBook = new AddressBook();
         //Adressbuch adressbuch2 = new Adressbuch(kontaktUno);
         addressBook.addKontakt(contactUno);
         addressBook.addKontakt(contactDos);
         addressBook.addKontakt(contactTres);
+        addressBook.addKontakt(contactCuatro);
+        addressBook.addKontakt(contactCinco);
+        addressBook.addKontakt(contactCinco);
+        addressBook.addKontakt(contactSeis);
+
 
         //Test 1
         //addressBook.removeContact(contactUno);
