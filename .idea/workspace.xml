@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde5f70c-f723-40fd-b0db-204018b539c8" name="Changes" comment="Erweiterte Suche + findByName mit .equals() statt .contains()">
+    <list default="true" id="cde5f70c-f723-40fd-b0db-204018b539c8" name="Changes" comment="JavaDoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +74,7 @@
       <workItem from="1682080009515" duration="1553000" />
       <workItem from="1682248013369" duration="6139000" />
       <workItem from="1682425752110" duration="403000" />
+      <workItem from="1682600396623" duration="716000" />
     </task>
     <task id="LOCAL-00001" summary="JavaDoc">
       <created>1682253068457</created>
@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682554227738</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="JavaDoc">
+      <created>1682555150673</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682555150673</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,9 +152,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aktuelle version? hat es geklappt? also die sachen aus dem praktikum?" />
     <MESSAGE value="aktuelle version? abgeänderter konstruktor" />
-    <MESSAGE value="JavaDoc" />
     <MESSAGE value="Funktionen der Klasse Contact ergänzt." />
     <MESSAGE value="Erweiterte Suche + findByName mit .equals() statt .contains()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erweiterte Suche + findByName mit .equals() statt .contains()" />
+    <MESSAGE value="JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaDoc" />
   </component>
 </project>
