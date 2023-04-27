@@ -60,22 +60,23 @@ public class AddressBook {
      * Sucht nach Kontakten im Adressbuch, die den angegebenen
      * Namen enthalten (Groß-/Kleinschreibung wird ignoriert).
      * @param name der zu suchende Name.
-     * @return eine Liste (searchresults) von Kontakten, die den Namen enthalten.
+     * @return eine Liste (searchResults) von Kontakten, die den Namen enthalten.
      */
     //equals Anna -> Annabelle
     public Set<Contact> findByName(String name){
         name = name.toLowerCase().trim();
-        Set<Contact> searchresults = new HashSet<>();
+        Set<Contact> searchResults = new HashSet<>();
         for (Contact contact : contactsSet) {
             if(contact.getFirstName().toLowerCase().equals(name) || contact.getLastName().toLowerCase().equals(name)){
-                searchresults.add(contact);
+                searchResults.add(contact);
             }
         }
-        return searchresults;
+        return searchResults;
     }
 
     /**
      * Diese Methode sucht nach einem String in Adressen, Telefonnummern, Vor- und Nachnamen aller Kontakte.
+     * (Groß- un Kleinschreibung wird ignoriert und es kann nach Teilstrings gesucht werden.)
      * @param query ist der zu suchende String
      * @return ein Set von Kontakten, die in einem Attribut den Suchbegriff haben.
      */

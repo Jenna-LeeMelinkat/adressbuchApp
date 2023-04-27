@@ -78,42 +78,80 @@ public class Contact {
        return kontaktdaten;
     }
 
+    /**
+     * Gibt alle Adressen des Kontakts zurück
+     * @return addressesSet
+     */
     public Set<Address> getAddresses(){
         return addressesSet;
     }
 
+    /**
+     * Gibt zurück, ob ein Kontakt eine Adresse besitzt.
+     * @return boolean
+     */
     public boolean hasAddress(){
         return !addressesSet.isEmpty();
     }
 
+    /**
+     * Fügt eine Adresse dem Kontakt hinzu.
+     * @param newAddress ist die neue Adresse.
+     */
     public void addAddresses(Address newAddress){
         addressesSet.add(newAddress);
     }
 
+    /**
+     * Löscht die Adresse des Kontaktes
+     * @param address ist die zu löschende Adresse.
+     */
     public void removeAddress(Address address){
         addressesSet.remove(address);
     }
 
+    /**
+     * Löscht alle Adresse des Kontaktes.
+     */
     public void clearAddresses(){
         addressesSet.clear();
     }
 
+    /**
+     * Gibt alle Telefonnummern des Kontaktes zurück.
+     * @return phonesSet
+     */
     public Set<Phone> getPhones(){
         return phonesSet;
     }
 
+    /**
+     * Gibt zurück, ob ein Kontakt eine Telefonnummer besitzt.
+     * @return boolean
+     */
     public boolean hasPhone(){
         return !phonesSet.isEmpty();
     }
 
+    /**
+     * Fügt eine neue Telefonnummer dem Kontakt hinzu.
+     * @param newPhone ist die neue Telefonnummer
+     */
     public void addPhone(Phone newPhone){
         phonesSet.add(newPhone);
     }
 
+    /**
+     * Löscht die Telefonnummer
+     * @param phone ist die zu löschende Telefonnummer
+     */
     public void removePhone(Phone phone){
         phonesSet.remove(phone);
     }
 
+    /**
+     * Löscht alle Telefonnummern des Kontaktes.
+     */
     public void clearPhones(){
         phonesSet.clear();
     }

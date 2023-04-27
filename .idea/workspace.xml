@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde5f70c-f723-40fd-b0db-204018b539c8" name="Changes" comment="Funktionen der Klasse Contact ergänzt.">
+    <list default="true" id="cde5f70c-f723-40fd-b0db-204018b539c8" name="Changes" comment="Erweiterte Suche + findByName mit .equals() statt .contains()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682552199900</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Erweiterte Suche + findByName mit .equals() statt .contains()">
+      <created>1682554227738</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682554227738</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +147,7 @@
     <MESSAGE value="aktuelle version? abgeänderter konstruktor" />
     <MESSAGE value="JavaDoc" />
     <MESSAGE value="Funktionen der Klasse Contact ergänzt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Funktionen der Klasse Contact ergänzt." />
+    <MESSAGE value="Erweiterte Suche + findByName mit .equals() statt .contains()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Erweiterte Suche + findByName mit .equals() statt .contains()" />
   </component>
 </project>
