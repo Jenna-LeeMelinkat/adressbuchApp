@@ -36,7 +36,6 @@ public class Main {
         addressBook.addKontakt(contactTres);
         addressBook.addKontakt(contactCuatro);
         addressBook.addKontakt(contactCinco);
-        addressBook.addKontakt(contactCinco);
         addressBook.addKontakt(contactSeis);
 
 
@@ -48,12 +47,19 @@ public class Main {
         //System.out.println(addressBook);
 
         //ruft toString() mit auf
-        System.out.println("Gesamte Liste");
-        System.out.println(addressBook);
+        //System.out.println("Gesamte Liste");
+        //System.out.println(addressBook);
+
 
         //ruft toString() mit auf
-        System.out.println("Suchresultate");
-        for (Contact contact : addressBook.findByName("Drei")) {
+        System.out.println("Suchresultate - byName");
+        for (Contact contact : addressBook.findByName("Melinkat")) {
+            System.out.println(contact.toString());
+            System.out.println('\n');
+        }
+
+        System.out.println("Suchresultate - byAll");
+        for (Contact contact : addressBook.searchAll("23557")) {
             System.out.println(contact.toString());
             System.out.println('\n');
         }

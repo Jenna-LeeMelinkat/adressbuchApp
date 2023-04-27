@@ -67,11 +67,30 @@ public class AddressBook {
         name = name.toLowerCase().trim();
         Set<Contact> searchresults = new HashSet<>();
         for (Contact contact : contactsSet) {
-            if(contact.getFirstName().toLowerCase().contains(name) || contact.getLastName().toLowerCase().contains(name)){
+            if(contact.getFirstName().toLowerCase().equals(name) || contact.getLastName().toLowerCase().equals(name)){
                 searchresults.add(contact);
             }
         }
         return searchresults;
+    }
+
+    /**
+     * Diese Methode sucht nach einem String in Adressen, Telefonnummern, Vor- und Nachnamen aller Kontakte.
+     * @param query ist der zu suchende String
+     * @return ein Set von Kontakten, die in einem Attribut den Suchbegriff haben.
+     */
+    public Set<Contact> searchAll(String query){
+        query = query.toLowerCase().trim();
+        Set<Contact> searchResults = new HashSet<>();
+        for (Contact contact : contactsSet) {
+            if(contact.getFirstName().toLowerCase().contains(query) ||
+                    contact.getLastName().toLowerCase().contains(query) ||
+                    contact.getAddresses().toString().toLowerCase().contains(query) ||
+                    contact.getPhone().contains(query)) {
+                searchResults.add(contact);
+            }
+        }
+        return searchResults;
     }
 
     @Override
