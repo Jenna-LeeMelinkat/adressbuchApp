@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cde5f70c-f723-40fd-b0db-204018b539c8" name="Changes" comment="JavaDoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,9 @@
       <workItem from="1682080009515" duration="1553000" />
       <workItem from="1682248013369" duration="6139000" />
       <workItem from="1682425752110" duration="403000" />
-      <workItem from="1682600396623" duration="716000" />
+      <workItem from="1682600396623" duration="1312000" />
+      <workItem from="1682673154719" duration="644000" />
+      <workItem from="1682887449828" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="JavaDoc">
       <created>1682253068457</created>
@@ -132,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682555150673</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="JavaDoc">
+      <created>1682603430839</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682603430839</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

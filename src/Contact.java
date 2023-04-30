@@ -31,14 +31,31 @@ public class Contact {
         phonesSet.add(phone);
     }
 
+    /**
+     * Konstruktor der Contact-Klasse ohne Telefonnummer mit Methodenüberladung
+     * @param firstName Vorname des Kontakts
+     * @param lastName Nachname des Kontakts
+     * @param address Adresse des Kontakts
+     */
     public Contact(String firstName, String lastName, Address address) {
         this(firstName,lastName,address,new Phone("","",""));
     }
 
+    /**
+     * Konstruktor der Contact-Klasse ohne Adresse mit Methodenüberlagerung
+     * @param firstName Vorname des Kontakts
+     * @param lastName Nachname des Kontakts
+     * @param phone Telefonnummer des Kontakts
+     */
     public Contact(String firstName, String lastName, Phone phone) {
         this(firstName,lastName,new Address("","","",""),phone);
     }
 
+    /**
+     * Konstruktor der Contact-Klasse nur mit Vor- und Nachname mit Methodenüberlagerung
+     * @param firstName Vorname des Kontakts
+     * @param lastName Nachname des Kontakts
+     */
     public Contact(String firstName, String lastName) {
         this(firstName,lastName,new Phone("","",""));
     }

@@ -1,6 +1,8 @@
 /**
  * Die Klasse Phone repräsentiert eine
  * Telefonnummer mit Vorwahl, Präfix und Nummer.
+ * @author Jenna-Lee Melinkat
+ * @author Julian Hahnefeld
  */
 public class Phone extends Entry {
 
